@@ -1,0 +1,15 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <ui:define name="conteudo">
+
+       <h:form>
+            <h:outputLabel value="Texto:" />
+            <h:inputTextarea value="#{textoBean.texto}" />
+            <h:commandButton value="Transformar" chave="10" actionListener="#{textoBean.tranformaEmCaixaAlta}"  />
+       </h:form>
+   </ui:define>     
+        
+</ui:composition>
