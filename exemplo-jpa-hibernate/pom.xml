@@ -27,7 +27,58 @@
             <url>http://repository.primefaces.org</url>
             <layout>default</layout>
         </repository>        
+         <!-- MAVEN REPOSITORY -->
+        <repository>
+            <id>mvn-repository</id>
+            <url>http://mvnrepository.com/</url>
+        </repository>
+
+        <!-- MAVEN SEARCH REPOSITORY -->
+        <repository>
+            <id>mavensearch</id>
+            <url>http://www.mvnsearch.org/maven2</url>
+        </repository>
+         <!-- JBOSS REPOSITORY -->
+        <repository>
+            <id>jboss-repository</id>
+            <url>https://repository.jboss.org/nexus/content/repositories/</url>
+        </repository>
+
+        <!-- JBOSS REPOSITORY -->
+        <repository>
+            <id>JBoss Repo</id>
+            <url>http://repository.jboss.com</url>
+        </repository>
+
+        <!-- GOOGLE REPOSITORY -->
+        <repository>
+            <id>google-repository</id>
+            <url>http://google-maven-repository.googlecode.com/svn/repository/</url>
+        </repository>
+
+        <!-- GLASSFISH REPOSITORY -->
+        <repository>
+            <id>glassfish-repository</id>
+            <url>http://download.java.net/maven/glassfish/</url>
+        </repository>
+
+        <!-- REPO2 REPOSITORY -->
+        <repository>
+            <id>repo2</id>
+            <url>http://repo2.maven.org/maven2</url>
+        </repository>
+        <!-- REPOSITÓRIO DA AOP ALLIANCE -->
+        <repository>
+            <id>spring-ext</id>
+            <name>Spring External Dependencies Repository</name>
+            <url>https://svn.sourceforge.net/svnroot/springframework/repos/repo-ext/</url>
+        </repository>       
         
+        <!-- REPOSITÓRIO DO JASPER REPORTS -->        
+        <repository>
+            <id>jasperreports</id>
+            <url>http://repo1.maven.org/maven2/</url>
+        </repository>  
         
     </repositories>
     
@@ -67,14 +118,14 @@
         <dependency>
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
-            <version>3.4.2</version>
+            <version>4.0</version>
         </dependency>
         
         
         <!-- ######## TEMAS DO PRIMEFACES ######### -->        
         <dependency>              
             <groupId>org.primefaces.themes</groupId>  
-            <artifactId>cupertino</artifactId>              
+            <artifactId>bluesky</artifactId>              
             <version>${themes.version}</version> 
         </dependency> 
         
@@ -113,7 +164,11 @@
             <artifactId>south-street</artifactId>  
             <version>${themes.version}</version> 
         </dependency>
-
+         <dependency>  
+            <groupId>org.primefaces.themes</groupId>  
+            <artifactId>afternoon</artifactId>  
+            <version>${themes.version}</version> 
+        </dependency>
         
         
         
